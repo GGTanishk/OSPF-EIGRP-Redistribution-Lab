@@ -1,0 +1,2 @@
+# OSPF-EIGRP-Redistribution
+ The use of a routing protocol to advertise routes that are learned by some other means, such as by another routing protocol, static routes, or directly connected routes, is called redistribution. In this lab we would be redistributing EIGRP routes into OSPF. Redistribution becomes a necessity while implicating multiple routing protocols in a LAN. Differences in routing protocols such as metrics, administrative distance, etcetera, can affect redistribution. These conditions must be solved while configuring the network with the protocols.

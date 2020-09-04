@@ -1,0 +1,472 @@
+hostname Router
+boot-start-marker
+boot system disk0:/s72033-adventerprisek9_wan-mz.122-33.SXI13.bin
+boot-end-marker
+no aaa new-model
+vtp domain cisco
+vtp mode transparent
+mls netflow interface
+mls cef error action reset
+spanning-tree mode pvst
+spanning-tree extend system-id
+diagnostic bootup level minimal
+redundancy
+ main-cpu
+  auto-sync running-config
+ mode sso
+vlan internal allocation policy ascending
+vlan access-log ratelimit 2000
+interface FastEthernet3/1
+ no ip address
+ shutdown
+interface FastEthernet3/2
+ no ip address
+ shutdown
+interface FastEthernet3/3
+ no ip address
+ shutdown
+interface FastEthernet3/4
+ no ip address
+ shutdown
+interface FastEthernet3/5
+ no ip address
+ shutdown
+interface FastEthernet3/6
+ no ip address
+ shutdown
+interface FastEthernet3/7
+ no ip address
+ shutdown
+interface FastEthernet3/8
+ no ip address
+ shutdown
+interface FastEthernet3/9
+ no ip address
+ shutdown
+interface FastEthernet3/10
+ no ip address
+ shutdown
+interface FastEthernet3/11
+ no ip address
+ shutdown
+interface FastEthernet3/12
+ no ip address
+ shutdown
+interface FastEthernet3/13
+ no ip address
+ shutdown
+interface FastEthernet3/14
+ no ip address
+ shutdown
+interface FastEthernet3/15
+ no ip address
+ shutdown
+interface FastEthernet3/16
+ no ip address
+ shutdown
+interface FastEthernet3/17
+ no ip address
+ shutdown
+interface FastEthernet3/18
+ no ip address
+ shutdown
+interface FastEthernet3/19
+ no ip address
+ shutdown
+interface FastEthernet3/20
+ no ip address
+ shutdown
+interface FastEthernet3/21
+ no ip address
+ shutdown
+interface FastEthernet3/22
+ no ip address
+ shutdown
+interface FastEthernet3/23
+ no ip address
+ shutdown
+interface FastEthernet3/24
+ no ip address
+ shutdown
+interface FastEthernet3/25
+ no ip address
+ shutdown
+interface FastEthernet3/26
+ no ip address
+ shutdown
+interface FastEthernet3/27
+ no ip address
+ shutdown
+interface FastEthernet3/28
+ no ip address
+ shutdown
+interface FastEthernet3/29
+ no ip address
+ shutdown
+interface FastEthernet3/30
+ no ip address
+ shutdown
+interface FastEthernet3/31
+ no ip address
+ shutdown
+interface FastEthernet3/32
+ no ip address
+ shutdown
+interface FastEthernet3/33
+ no ip address
+ shutdown
+interface FastEthernet3/34
+ no ip address
+ shutdown
+interface FastEthernet3/35
+ no ip address
+ shutdown
+interface FastEthernet3/36
+ no ip address
+ shutdown
+interface FastEthernet3/37
+ no ip address
+ shutdown
+interface FastEthernet3/38
+ no ip address
+ shutdown
+interface FastEthernet3/39
+ no ip address
+ shutdown
+interface FastEthernet3/40
+ no ip address
+ shutdown
+interface FastEthernet3/41
+ no ip address
+ shutdown
+interface FastEthernet3/42
+ no ip address
+ shutdown
+interface FastEthernet3/43
+ no ip address
+ shutdown
+interface FastEthernet3/44
+ no ip address
+ shutdown
+interface FastEthernet3/45
+ no ip address
+ shutdown
+interface FastEthernet3/46
+ no ip address
+ shutdown
+interface FastEthernet3/47
+ no ip address
+ shutdown
+interface FastEthernet3/48
+ no ip address
+ shutdown
+interface GigabitEthernet5/1
+ no ip address
+ shutdown
+interface GigabitEthernet5/2
+ no ip address
+ shutdown
+interface FastEthernet6/1
+ ip address 172.16.2.2 255.255.255.0
+interface FastEthernet6/2
+ no ip address
+ shutdown
+interface FastEthernet6/3
+ no ip address
+ shutdown
+interface FastEthernet6/4
+ no ip address
+ shutdown
+interface FastEthernet6/5
+ no ip address
+ shutdown
+interface FastEthernet6/6
+ no ip address
+ shutdown
+interface FastEthernet6/7
+ no ip address
+ shutdown
+interface FastEthernet6/8
+ no ip address
+ shutdown
+interface FastEthernet6/9
+ no ip address
+ shutdown
+interface FastEthernet6/10
+ no ip address
+ shutdown
+interface FastEthernet6/11
+ no ip address
+ shutdown
+interface FastEthernet6/12
+ no ip address
+ shutdown
+interface FastEthernet6/13
+ no ip address
+ shutdown
+interface FastEthernet6/14
+ no ip address
+ shutdown
+interface FastEthernet6/15
+ no ip address
+ shutdown
+interface FastEthernet6/16
+ no ip address
+ shutdown
+interface FastEthernet6/17
+ no ip address
+ shutdown
+interface FastEthernet6/18
+ no ip address
+ shutdown
+interface FastEthernet6/19
+ no ip address
+ shutdown
+interface FastEthernet6/20
+ no ip address
+ shutdown
+interface FastEthernet6/21
+ no ip address
+ shutdown
+interface FastEthernet6/22
+ no ip address
+ shutdown
+interface FastEthernet6/23
+ no ip address
+ shutdown
+interface FastEthernet6/24
+ no ip address
+ shutdown
+interface FastEthernet6/25
+ no ip address
+ shutdown
+interface FastEthernet6/26
+ no ip address
+ shutdown
+interface FastEthernet6/27
+ no ip address
+ shutdown
+interface FastEthernet6/28
+ no ip address
+ shutdown
+interface FastEthernet6/29
+ no ip address
+ shutdown
+interface FastEthernet6/30
+ no ip address
+ shutdown
+interface FastEthernet6/31
+ no ip address
+ shutdown
+interface FastEthernet6/32
+ no ip address
+ shutdown
+interface FastEthernet6/33
+ no ip address
+ shutdown
+interface FastEthernet6/34
+ no ip address
+ shutdown
+interface FastEthernet6/35
+ no ip address
+ shutdown
+interface FastEthernet6/36
+ no ip address
+ shutdown
+interface FastEthernet6/37
+ no ip address
+ shutdown
+interface FastEthernet6/38
+ no ip address
+ shutdown
+interface FastEthernet6/39
+ no ip address
+ shutdown
+interface FastEthernet6/40
+ no ip address
+ shutdown
+interface FastEthernet6/41
+ no ip address
+ shutdown
+interface FastEthernet6/42
+ no ip address
+ shutdown
+interface FastEthernet6/43
+ no ip address
+ shutdown
+interface FastEthernet6/44
+ no ip address
+ shutdown
+interface FastEthernet6/45
+ no ip address
+ shutdown
+interface FastEthernet6/46
+ no ip address
+ shutdown
+interface FastEthernet6/47
+ no ip address
+ shutdown
+interface FastEthernet6/48
+ no ip address
+ shutdown
+interface FastEthernet8/1
+ no ip address
+ shutdown
+interface FastEthernet8/2
+ no ip address
+ shutdown
+interface FastEthernet8/3
+ no ip address
+ shutdown
+interface FastEthernet8/4
+ no ip address
+ shutdown
+interface FastEthernet8/5
+ no ip address
+ shutdown
+interface FastEthernet8/6
+ no ip address
+ shutdown
+interface FastEthernet8/7
+ no ip address
+ shutdown
+interface FastEthernet8/8
+ no ip address
+ shutdown
+interface FastEthernet8/9
+ no ip address
+ shutdown
+interface FastEthernet8/10
+ no ip address
+ shutdown
+interface FastEthernet8/11
+ no ip address
+ shutdown
+interface FastEthernet8/12
+ no ip address
+ shutdown
+interface FastEthernet8/13
+ no ip address
+ shutdown
+interface FastEthernet8/14
+ no ip address
+ shutdown
+interface FastEthernet8/15
+ no ip address
+ shutdown
+interface FastEthernet8/16
+ no ip address
+ shutdown
+interface FastEthernet8/17
+ no ip address
+ shutdown
+interface FastEthernet8/18
+ no ip address
+ shutdown
+interface FastEthernet8/19
+ no ip address
+ shutdown
+interface FastEthernet8/20
+ no ip address
+ shutdown
+interface FastEthernet8/21
+ no ip address
+ shutdown
+interface FastEthernet8/22
+ no ip address
+ shutdown
+interface FastEthernet8/23
+ no ip address
+ shutdown
+interface FastEthernet8/24
+ no ip address
+ shutdown
+interface FastEthernet8/25
+ no ip address
+ shutdown
+interface FastEthernet8/26
+ no ip address
+ shutdown
+interface FastEthernet8/27
+ no ip address
+ shutdown
+interface FastEthernet8/28
+ no ip address
+ shutdown
+interface FastEthernet8/29
+ no ip address
+ shutdown
+interface FastEthernet8/30
+ no ip address
+ shutdown
+interface FastEthernet8/31
+ no ip address
+ shutdown
+interface FastEthernet8/32
+ no ip address
+ shutdown
+interface FastEthernet8/33
+ no ip address
+ shutdown
+interface FastEthernet8/34
+ no ip address
+ shutdown
+interface FastEthernet8/35
+ no ip address
+ shutdown
+interface FastEthernet8/36
+ no ip address
+ shutdown
+interface FastEthernet8/37
+ no ip address
+ shutdown
+interface FastEthernet8/38
+ no ip address
+ shutdown
+interface FastEthernet8/39
+ no ip address
+ shutdown
+interface FastEthernet8/40
+ no ip address
+ shutdown
+interface FastEthernet8/41
+ no ip address
+ shutdown
+interface FastEthernet8/42
+ no ip address
+ shutdown
+interface FastEthernet8/43
+ no ip address
+ shutdown
+interface FastEthernet8/44
+ no ip address
+ shutdown
+interface FastEthernet8/45
+ no ip address
+ shutdown
+interface FastEthernet8/46
+ no ip address
+ shutdown
+interface FastEthernet8/47
+ no ip address
+ shutdown
+interface FastEthernet8/48
+ no ip address
+ shutdown
+interface Vlan1
+ no ip address
+ shutdown
+router eigrp 20
+ network 172.16.2.0 0.0.0.255
+ distance eigrp 90 105
+ eigrp router-id 172.16.2.2
+ip classless
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+control-plane
+dial-peer cor custom
+line con 0
+line vty 0 4
+ login
+end
